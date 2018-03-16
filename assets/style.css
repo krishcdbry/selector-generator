@@ -1,0 +1,38 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+pre {
+    white-space: pre-line;
+    padding: 15px;
+    width: auto;
+    display: table;
+    margin: 2px 5px;
+    position: relative;
+}
+
+pre#code {
+    background: #f0f0f0;
+    margin: 0;
+    padding: 26px 5px;
+    margin: 9px 0px;
+}
+
+.output {
+    color: #999
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ddd;
+    padding: 5px;
+    box-shadow: 0px 2px 5px #bbb;
+}

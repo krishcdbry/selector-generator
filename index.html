@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Style Selector Generator</title>
+        <link rel="stylesheet" href="assets/style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>  Selector Generator </h1>
+        </header>
+        <div id="main-div">
+            <div class="inner-class-div">
+                Krishcdbry
+
+                <pre>
+                    <pre id="code">
+                        <div class="caption">Krishcdbry Element</div>
+                        _generateSelector(document.getElementById('main-div'));
+
+                        <span class="output">
+                            // Output ->  "div#main-div"
+                        </span>
+                    </pre>
+                </pre>
+
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li class="third list">Three</li>
+                </ul>
+
+                <pre>
+                        <pre id="code">
+                            <div class="caption">Three (li) Element</div>
+                            _generateSelector(document.getElementsByClassName('third')[0]);
+
+                            <span class="output">
+                                // Output -> div#main-div > div:nth-child(1).inner-class-div > ul:nth-child(2) > li:nth-child(3).third.list
+                            </span> 
+                        </pre>
+                    </pre>
+
+                <div class="image-div">
+                    <img src="assets/img/background.jpeg" id="my-image"/>
+                    <pre>
+                            <pre id="code">
+                                <div class="caption">Image Element</div>
+                                _generateSelector(document.getElementById('my-image'));
+    
+                                <span class="output">
+                                    // Output -> div#main-div > div:nth-child(1).inner-class-div > div:nth-child(4).image-div > img#my-image
+                                </span> 
+                            </pre>
+                        </pre>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="lib.js"></script>
+    </body>
+</html>
