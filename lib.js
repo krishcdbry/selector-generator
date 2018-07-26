@@ -47,8 +47,6 @@
             else {
                 let sibling = elem;
                 let _nth = 0;
-                console.log(sibling);
-                console.log(sibling.parentNode.children, "Previous Siblings"); 
                 while(sibling != null && sibling.nodeType === Node.ELEMENT_NODE) {
                     sibling = sibling.previousElementSibling;
                     _nth++;
